@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "280756386431",
+    "project_id": "virtuatienda-14c6f",
+    "storage_bucket": "virtuatienda-14c6f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:280756386431:android:3f64ff0a3cf7bfbe931d4a",
+        "android_client_info": {
+          "package_name": "jemmanuel.romeror.virtuatienda"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwbCQQSF-Mh-NKEbWDEsgtuH__e7Bnyd0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

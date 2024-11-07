@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">VirtuaTienda</string>
+
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+
+    <string name="op_inicio_v">Inicio</string>
+    <string name="op_mi_tienda_v">Lotus</string>
+    <string name="op_resenia_v">Reseñas</string>
+    <string name="op_cerrar_sesion_v">Cerrar Sesión</string>
+
+    <string name="op_mis_productos_v">Mis Productos</string>
+    <string name="op_mis_ordenes_v">Ordenes</string>
+
+    <string name="txt_bienvenida">Bienvenido</string>
+
+    <!--Registro de vendedor-->
+    <string name="txtRegistroVendedor">Registro de Vendedor</string>
+    <string name="etNombreV">Nombres completos</string>
+    <string name="etEmailV">Email</string>
+    <string name="etPasswordV">Password</string>
+    <string name="etCPasswordV">Confirmar password</string>
+    <string name="btnRegistrarV">Registrarme</string>
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
