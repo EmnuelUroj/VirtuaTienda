@@ -28,19 +28,20 @@
             android:layout_height="match_parent"
             android:background="@android:color/transparent"
             android:elevation="0dp"
-            app:lebelVisibilityMode="labeled"
+            app:labelVisibilityMode="labeled"
             app:menu="@menu/bottom_nav_bar_vendedor_menu"/>
 
     </com.google.android.material.bottomappbar.BottomAppBar>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addFab"
-        android:background="@color/celeste_claro"
-        android:src="@drawable/ico_agregar"
-        app:tint="@android:color/white"
-        app:layout_anchor="@id/bottomAppBar"
-        android:layout_marginBottom="10dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/celeste_claro"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ico_agregar"
+        app:layout_anchor="@id/bottomAppBar"
+        app:tint="@android:color/white" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

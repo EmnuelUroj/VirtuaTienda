@@ -1,5 +1,6 @@
 package jemmanuel.romeror.virtuatienda.Vendedor
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
@@ -12,6 +13,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
+import com.google.firebase.auth.FirebaseAuth
 import jemmanuel.romeror.virtuatienda.R
 import jemmanuel.romeror.virtuatienda.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentMisProductosV
 import jemmanuel.romeror.virtuatienda.Vendedor.Bottom_Nav_Fragments_Vendedor.FragmentOrdenesV
@@ -22,13 +24,24 @@ import jemmanuel.romeror.virtuatienda.databinding.ActivityMainVendedorBinding
 
 class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationItemSelectedListener {
     private lateinit var binding: ActivityMainVendedorBinding
+    private var firebaseAuth : FirebaseAuth?= null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
+
         super.onCreate(savedInstanceState)
         binding = ActivityMainVendedorBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
+
+        firebaseAuth= FirebaseAuth.getInstance()
+        comprobarSesion()
+
+
         binding.navigationView.setNavigationItemSelectedListener(this)
         val toggle = ActionBarDrawerToggle(
             this
@@ -41,6 +54,16 @@ class MainActivityVendedor : AppCompatActivity() , NavigationView.OnNavigationIt
         toggle.syncState()
         replaceFragment(FragmentInicioV())
         binding.navigationView.setCheckedItem(R.id.op_inicio_v)
+    }
+
+    private fun comprobarSesion() {
+        if (firebaseAuth!!.currentUser==null) {
+            startActivity(Intent(applicationContext, RegistroVendedorActivity::class.java))
+            Toast.makeText(applicationContext,"Vendedor no registrado", Toast.LENGTH_SHORT).show()
+
+        }else{
+            Toast.makeText(applicationContext,"Vendedor en linea", Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun replaceFragment(fragment: Fragment) {

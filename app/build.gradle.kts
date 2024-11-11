@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace = "jemmanuel.romeror.virtuatienda"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "jemmanuel.romeror.virtuatienda"
         minSdk = 30
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -48,6 +48,9 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.lottie)
+    implementation(libs.firebaseAuth)
+    implementation(libs.firebaseDatabase)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
