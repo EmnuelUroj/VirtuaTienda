@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -14,13 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VirtuaTienda"
         tools:targetApi="31">
-        <activity android:name=".Vendedor.RegistroVendedorActivity"
-            android:exported="false"/>
-        <activity android:name=".Vendedor.MainActivityVendedor"
-            android:exported="false"/>
+        <activity
+            android:name=".Vendedor.LoginVendedorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vendedor.RegistroVendedorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Vendedor.MainActivityVendedor"
+            android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,9 +33,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:name=".Cliente.MainActivityCliente"
+            android:exported="true"></activity>
     </application>
 
 </manifest>

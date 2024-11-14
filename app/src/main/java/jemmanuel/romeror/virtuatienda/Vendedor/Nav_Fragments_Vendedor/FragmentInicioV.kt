@@ -39,7 +39,10 @@ class FragmentInicioV : Fragment() {
         replaceFragment(FragmentMisProductosV())
         binding.bottomNavigation.selectedItemId = R.id.op_mis_productos_v
         binding.addFab.setOnClickListener {
-            Toast.makeText(mContext,"Agregar Producto", Toast.LENGTH_SHORT).show()
+            Toast.makeText(mContext,
+                "Boton flotante presionado",
+                Toast.LENGTH_SHORT
+            ).show()
         }
 
         return binding.root

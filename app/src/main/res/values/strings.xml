@@ -4,15 +4,24 @@
     <string name="open_drawer">Open drawer</string>
     <string name="close_drawer">Close drawer</string>
 
+    <!--Vendedor-->
     <string name="op_inicio_v">Inicio</string>
-    <string name="op_mi_tienda_v">Lotus</string>
+    <string name="op_mi_tienda_v">Mi Tienda</string>
     <string name="op_resenia_v">Reseñas</string>
     <string name="op_cerrar_sesion_v">Cerrar Sesión</string>
 
+    <!--Cliente-->
+    <string name="op_inicio_c">Inicio</string>
+    <string name="op_mi_perfil_c">Mi Perfil</string>
+    <string name="op_cerrar_sesion_c">Cerrar Sesión</string>
+
+    <!--Navi Vendedor-->
     <string name="op_mis_productos_v">Mis Productos</string>
     <string name="op_mis_ordenes_v">Ordenes</string>
 
-    <string name="txt_bienvenida">Bienvenido</string>
+    <!--Navi Cliente-->
+    <string name="op_tienda_c">Tienda</string>
+    <string name="op_mis_ordenes_c">Mis órdenes</string>
 
     <!--Registro de vendedor-->
     <string name="txtRegistroVendedor">Registro de Vendedor</string>
@@ -22,7 +31,13 @@
     <string name="etCPasswordV">Confirmar password</string>
     <string name="btnRegistrarV">Registrarme</string>
 
+    <!--Login de vendedor-->
+    <string name="txtLoginV">Login de Vendedor</string>
+    <string name="btnLoginV">Ingresar</string>
+    <string name="txtNocuenta">¿No tienes una cuenta?</string>
+    <string name="tvRegistraV">Registrame</string>
 
+    <string name="txt_bienvenida">Bienvenido</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
